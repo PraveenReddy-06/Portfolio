@@ -1,0 +1,6 @@
+- [ ] Update Navbar.jsx: Add Tailwind classes for fixed positioning, flex layout, and link styling to make links visible.
+- [ ] Add id="Hero" to Hero.jsx section.
+- [ ] Add id="About" to About.jsx section.
+- [ ] Create basic content for Skills.jsx and add id="Skills".
+- [ ] Create basic content for Projects.jsx and add id="Projects".
+- [ ] Add id="Contact" to Contact.jsx section.

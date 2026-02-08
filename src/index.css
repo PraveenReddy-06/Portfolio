@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: oklch(14.1% 0.005 285.823);
+  --color-foreground: oklch(93.1% 0.005 285.823);
+
+  --radius-card: 1.5rem;
+  --radius:0.75rem;
+  --font-sans: Inter, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --color-primary: oklch(70.7% 0.022 261.325);
+
+  --color-glass:oklch(20.5% 0 0);
+  --color-surface:oklch(29.1% 0.149 302.717);
+  --color-highlight:oklch(42.4% 0.199 265.638);
+  --color-dot:oklch(29.1% 0.149 302.717);
+  --color-dot-hover:oklch(38.1% 0.176 304.987);
+}
+@layer base{
+  html {
+    scroll-behavior: smooth;
+
+  }
+  body{
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+
+  }
+}
+
+@layer components {
+  .icons{
+    @apply w-10 h-10 md:w-20 md:h-20 object-cover rounded-full hover:scale-105 transition;
+  }
+}
+
+@layer components {
+
+  .heading {
+    @apply text-2xl md:text-4xl font-semibold tracking-tight py-2 text-center;
+  }
+  .container-custom {
+    @apply max-w-6xl mx-auto px-6 w-full py-10;
+  }
+  .card {
+    @apply p-6 rounded-2xl border border-highlight/30
+           hover:border-highlight
+           hover:-translate-y-1
+           hover:shadow-xl
+           transition duration-300
+           flex flex-col;
+  }
+  .skill-row {
+    @apply flex items-center justify-center gap-2 py-1;
+  }
+  .pill {
+    @apply mt-6 px-6 py-2 rounded-full bg-primary text-black font-medium hover:scale-105 transition;
+  }
+}
+
+@layer components {
+  .card-dot {
+    @apply absolute w-3 h-3 rounded-full top-19 bg-dot hover:bg-dot-hover;
+  }
+}
+
+
