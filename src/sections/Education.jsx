@@ -18,7 +18,7 @@ const Education = () => {
                 <>
                   <div className="card relative text-left"> 
                     <span className="card-dot -right-6"></span> 
-                    <h3 className="font-bold text-right" >{details.duration}</h3>
+                    <h3 className="text-sm md:text-xl font-bold text-right " >{details.duration}</h3>
                     <p >{details.degree}</p>
                     <p>{details.institute}</p>
                     <p>{details.location}</p> 

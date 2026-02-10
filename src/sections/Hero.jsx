@@ -16,13 +16,13 @@ const Hero = () => {
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-highlight">Praveen Maramreddy</h2>
             <p className="mt-4 text-gray-400">
              CS Undergraduate | Java Developer | Full-Stack Enthusiast | Data Structures & Algorithms</p>
-            <div className="flex items-center gap-10 py-6">             
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 py-6">             
                 <a className="pill">Resume</a>             
                 <a className="pill">See My Work</a>
             </div>           
           </div>
           
-          <div className="col-span-3 col-start-2  text-1xl ">
+          <div className="col-span-3 col-start-2 text-sm md:text-1xl ">
             <h1>─────── L E A R N • C O D E • G R O W  ───────</h1>
           </div>
 
